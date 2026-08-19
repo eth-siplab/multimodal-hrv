@@ -4,8 +4,6 @@ Official implementation for **Continuous Heart Rate Variability Estimation From 
 
 The method estimates ECG-aligned inter-beat intervals (IBIs) from wearable photoplethysmography (PPG), then refines the estimates with a causal, learnable state-space model (SSM). Motion (IMU) and temperature are used as auxiliary signals when available. The result is a continuous IBI sequence from which standard HRV measures, including SDNN, RMSSD, and LF/HF power, are computed.
 
-The accompanying manuscript is included as [IEEE_2025__HRV.pdf](IEEE_2025__HRV.pdf).
-
 ## Highlights
 
 - Two-stage model: a 1-D UNet predicts IBI mean and uncertainty; a learnable AR(2) state-space model refines the sequence.
@@ -202,11 +200,15 @@ For each fold and quality ratio:
 If you use this code, please cite:
 
 ```bibtex
-@article{demirel2026continuous,
-  title   = {Continuous Heart Rate Variability Estimation From PPG via State-Space Modeling},
-  author  = {Demirel, Berken Utku and Holz, Christian},
-  year    = {2026}
-}
+@ARTICLE{11456553,
+  author={Demirel, Berken Utku and Holz, Christian},
+  journal={IEEE Transactions on Biomedical Engineering}, 
+  title={Continuous Heart Rate Variability Estimation From PPG via State-Space Modeling}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/TBME.2026.3678004}}
 ```
 
 ## License and data use
