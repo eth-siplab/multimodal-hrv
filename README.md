@@ -85,7 +85,7 @@ ibi_ecg_ms  (n_windows,) object    per-window ECG IBI arrays, in milliseconds
 For **BIDMC**, the loader requires only:
 
 ```text
-ppg         (n_windows, 2048)      PPG windows
+ppg         (n_windows, 1024)      PPG windows
 ibi_ecg_ms  (n_windows,) object    per-window ECG IBI arrays, in milliseconds
 ```
 
